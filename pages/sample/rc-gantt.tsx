@@ -53,7 +53,8 @@ const Sample: NextPage = () => {
       </Text>
       <div>
         <div style={{ height: 500 }}>
-          {/* TODO 日本化にできるか調べる */}
+          {/* TODO 日本化にできるか調べる
+          パッケージの更新がイマイチなので優先度は低め */}
           <RcGantt
             data={data}
             columns={[
