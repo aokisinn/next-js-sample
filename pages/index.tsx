@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, GridItem, Text } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
@@ -7,6 +8,17 @@ const Home: NextPage = () => {
       <Text fontSize="xl" color="white">
         Hello world
       </Text>
+      {/* Grid */}
+      <Text fontSize="xl" color="white">
+        Grid Sample
+      </Text>
+      <Grid templateColumns="repeat(5, 1fr)" gap={6} ml={2} mr={2}>
+        <GridItem w="100%" h="10" bg="blue.500" />
+        <GridItem w="100%" h="10" bg="blue.500" />
+        <GridItem w="100%" h="10" bg="blue.500" />
+        <GridItem w="100%" h="10" bg="blue.500" />
+        <GridItem w="100%" h="10" bg="blue.500" />
+      </Grid>
     </Box>
   );
 };
