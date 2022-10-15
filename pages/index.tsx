@@ -20,6 +20,9 @@ const Home: NextPage = () => {
         <ListItem>
           <Link href="/sample/grid">Sample Grid</Link>
         </ListItem>
+        <ListItem>
+          <Link href="/sample/rc-gantt">ガントチャート(rc-gantt)</Link>
+        </ListItem>
       </UnorderedList>
     </Box>
   );
